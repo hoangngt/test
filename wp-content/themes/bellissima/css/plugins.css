@@ -1,0 +1,376 @@
+/*********************/
+/***** Mega Menu *****/
+/*********************/
+ul.ldd_menu {
+	margin:0px;
+	padding:0;
+	display:block;
+	list-style:none;
+	white-space: nowrap;
+	color: #fff;
+}
+ul.ldd_menu > li{
+	float:left;
+	position:relative;
+}
+ul.ldd_menu > li > span{
+	float:left;
+	cursor:pointer;
+	background-image: url(../images/menu_arrow.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	padding-right: 20px;
+	/* color: #F5D96E; */
+}
+
+ul.ldd_menu .ldd_submenu{
+	position:absolute;
+	top:40px;
+	width:600px;
+	display:none;
+	opacity:0.95;
+	right:0px;
+	font-size:12px;
+	background: #e58039;
+	border-top: 1px solid #9a410b;
+	-moz-box-shadow:0px 1px 4px #313131 inset;
+	-webkit-box-shadow:0px 1px 4px #313131 inset;
+	-box-shadow:0px 1px 4px #313131 inset;
+	z-index: 12000;
+	padding: 10px 30px 30px;
+	white-space: normal;
+	line-height: 22px;
+}
+
+#container .ldd_submenu a {color: #fff; text-decoration:underline;}
+#container .ldd_submenu a:hover {text-decoration: none;}
+.ldd_submenu img {
+	border: 5px solid #cccccc;
+	margin: 0px 4px 0px 0px;
+}
+
+#container .ldd_submenu ul {
+list-style-type: disc;
+margin:0;
+padding:0;
+}
+#container .ldd_submenu ul li {
+display: block;
+float: none;
+background: transparent;
+margin:0;
+padding:0;
+line-height: 24px;
+border-top: 1px dotted #863200;
+background: url(../images/link_arrow_white.png) no-repeat left 14px;
+padding: 6px 0px 6px 14px;
+}
+#container .ldd_submenu ul li a {text-decoration:none;}
+#container .ldd_submenu ul li:first-child {border:0;}
+
+#container .ldd_submenu ul {margin-top: 5px; margin-bottom: 0;}
+
+.mega-menu-text {
+	width: 45%;
+	padding: 15px;
+	text-transform: none;
+	color: #ffffff;
+	font-weight: normal;
+	text-shadow: none;
+}
+
+#ldd_menu .sh-one-half {
+width: 48%;
+margin:0;
+margin-right: 23px;
+margin-top: 20px;
+}
+#ldd_menu .sh-one-half.column-last {margin:0; margin-top:20px;margin-right: 0;}
+
+
+
+/*************************************/
+/***** Product Slider ****/
+/*************************************/
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.slider {
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 970px;
+	height:280px;
+	padding: 0px;
+}
+
+.slider-nav {
+	position: relative;
+}
+
+.slider-nav a.next2,
+.slider-nav a.prev2 {
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	top: 123px;
+	z-index: 99;
+	cursor: pointer;
+	text-indent: -8888px;
+	opacity: 0.5;
+	filter:alpha(opacity=30);
+}
+
+.slider-nav a:hover.next2,
+.slider-nav a:hover.prev2 {
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+.slider-nav .prev2 {
+	background: url(../images/carousel_arrows.png) no-repeat;
+	background-position: 0px 0px;
+	left: -15px;
+}
+.slider-nav .next2 {
+	background: url(../images/carousel_arrows.png) no-repeat;
+	background-position: 0px -27px;
+	right: -15px;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.slider .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div.group-items {
+	float: left;
+	width: 972px;
+	margin: 0px 0px 0px -1px;
+	padding: 15px 0px 0px 0px;
+}
+
+div.group-items div.single-item {
+	width: 212px; 
+	float: left; 
+	border-right: 1px solid #e8e8e8;
+	padding: 0px 15px;;
+	text-align: center;
+}
+
+div.group-items div.single-item img {
+	padding: 15px 0px 20px 0px;
+}
+
+div.group-items div.first {
+	width: 230px;
+	padding: 0px 15px 0px 0px;
+}
+
+div.group-items div.last {
+	width: 230px;
+	padding: 0px 0px 0px 15px;
+	border: 0px none;
+}
+
+div.group-items span.title {
+	color: #863200;
+	font-size: 15px;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+
+div.group-items span.price {
+	color: #4d4c4c;
+	font-size: 13px;
+	font-weight: bold;
+  display: block;
+  text-align: left;
+}
+
+/* active item */
+.slider .active {
+	border:2px solid #000;
+	position:relative;
+	cursor:default;
+}
+
+/* this makes it possible to add next button beside scrollable */
+.slider {
+	float:left;	
+}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+}
+
+
+
+
+/*** Superfish Menu STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	wwidth:			170px; /* left offset of submenus need to match (see below) */
+	white-space: nowrap;
+}
+.sf-menu ul li {
+	width:			100%;
+	text-shadow: none;
+	text-transform: none;
+	font-weight: normal;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			39px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			39px; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			39px; /* match ul width */
+	top:			0;
+}
+
+/*** SKIN ***/
+.sf-menu {
+	float: left;
+}
+.sf-menu a {
+
+}
+.sf-menu a  { /* visited pseudo selector so IE6 applies text colour*/
+	color: #031a48;
+	text-decoration: none;
+}
+.sf-menu li li {
+	background:		#e58039;
+}
+
+.sf-menu li ul {
+	border: 1px solid #863200;
+}
+
+.sf-menu li li li {
+	background:		#9AAEDB;
+}
+.sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	outline:		0;
+}
+
+.sf-menu li li {
+	padding: 0px;
+	border-bottom: 1px dotted #863200;
+	font-size: 12px;
+}
+
+.sf-menu li li a {
+	padding: 0px 20px 0px 20px;
+}
+
+.sf-menu li li:hover {
+	background:		#522300;
+	outline:	0;
+}
+
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+	background-image: url(../images/menu_arrow.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	padding-right: 20px;
+	
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			.8em;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
+.sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator,
+.sf-menu ul a:hover > .sf-sub-indicator,
+.sf-menu ul a:active > .sf-sub-indicator,
+.sf-menu ul li:hover > a > .sf-sub-indicator,
+.sf-menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+/*** shadows for all but IE6 ***/
+.sf-shadow ul {
+	padding: 0px;
+	border: 1px solid #c1698d;
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+	box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 0 5px rgba(0, 0, 0, 0.7);
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}
+
+.sf-shadow li li.last {
+	border: 0px none;
+}

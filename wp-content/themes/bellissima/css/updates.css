@@ -1,0 +1,34 @@
+.select-menu {
+display: none;
+width: 130px;
+}
+.navigation-inner .search-inner {
+	display: none;
+}
+#content .button, #commentform .form-submit #submit, #searchform #searchsubmit {
+	background: #171717;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#696969', EndColorStr='#171717');
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#696969), color-stop(50%,#3d3d3d), color-stop(50%,#292929), color-stop(100%,#171717));
+	background: -moz-linear-gradient(center top, #696969 0%, #3d3d3d 50%, #292929 50%, #171717 100%);
+}
+
+#slider-container .single-item a {
+  display: block;
+}
+
+.slider { height: auto; }
+.slider .items { position:relative; }
+
+#container .sf-menu ul li { text-shadow: none; text-transform: none; font-weight: normal; display: block; float: none; }
+
+.blog-post-home-title {
+height: auto;
+margin-bottom: 22px;
+}
+.blog-post-home-title-inner {
+position:relative;
+height: auto;
+padding-left: 10px;
+}
+
+.exposureTarget {background: transparent;}

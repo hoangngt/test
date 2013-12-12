@@ -1,0 +1,333 @@
+/*** Background 1 ***/
+/*
+body {
+	background-image: url(images/background.jpg);
+	background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #711043;
+}
+*/
+/*** Background 2 ***/
+html, body  {
+color: #50062c;
+}
+body {
+background: #711043 url(images/bkg.jpg) repeat;
+}
+h1,h2,h3,h4,h5,h6 {
+color: #50062c;
+}
+a, a:visited,a.regular,a.regular:visited,a.arrow,a.arrow:visited,.blog-post-home-title-inner,.blog-entry .calendar,.detail-item .text-info span.title,.blog-entry a.title, #promo #main_navi li span.title {
+color: #ce5d86;
+}
+a:hover ,a.regular:hover {
+color: #828282;
+border: 0;
+}
+
+#container {
+background: url(images/floral.png) no-repeat center top;
+}
+
+.flare {
+position: absolute;
+top: -157px;
+left: -63px;
+width: 180px;
+height: 180px;
+background-image: url(images/flare.png);
+background-repeat: no-repeat;
+}
+
+
+
+
+
+/*** Menu ***/
+.sf-menu li li {
+background: none repeat scroll 0 0 #B54773;
+}
+
+.sf-menu li li:hover {
+background: none repeat scroll 0 0 #50062C;
+}
+
+.sf-menu li ul {
+border: 1px solid #c1698d;
+background:		#b54773;
+}
+
+.sf-menu li li li {
+background:		#9AAEDB;
+}
+
+ul.ldd_menu .ldd_submenu {
+background: none repeat scroll 0 0 #B54773;
+-moz-box-shadow: 0 0px 4px rgba(44, 44, 44, 0.4);
+-webkit-box-shadow: 0 0px 4px rgba(44, 44, 44, 0.4);
+box-shadow: 0 0px 4px rgba(44, 44, 44, 0.4);
+}
+
+ul.ldd_menu h4 {
+color: #F5D96E;
+font-size: 20px;
+}
+
+
+
+
+
+
+/*** Homepage ***/
+#container #main_navi {
+background-color: #ede6e9;
+}
+
+#container #promo #main_navi li.active {
+background: #50062c;
+}
+
+#container #main_navi li:hover {
+	background-color:#cfc5ca;
+}
+
+.content-top {
+	background-image: url(images/contentblock_top.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.message {
+	background-color: #50062c;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0px 1px 0px 0px #7b4f67, 0 1px 8px 0px rgba(0, 0, 0, 0.7) inset;
+	color: #ffffff;
+}
+
+.search-inner {
+	background-image: url(images/search_field.png);
+	background-repeat: no-repeat;
+}
+
+.search-container {
+	background-image: url(images/search_bkg.png);
+	background-repeat: no-repeat;
+}
+
+h3 {
+	color: #50062c;
+}
+
+span.promocode, #header-top a {
+    color: #E487A5;
+}
+
+.navigation-inner {
+	background-image: url(images/navigation_bkg.png);
+	background-repeat: no-repeat;
+}
+
+.blog-home-date {
+	background-image: url(images/date_bkg_homepage.png);
+	background-position: left middle;
+	background-repeat: no-repeat;
+}
+
+.login-block span.account {
+	background-image: url(images/signin_icon.png);
+	background-repeat: no-repeat;
+}
+
+.login-block span.cart {
+	background-image: url(images/cart_icon.png);
+	background-repeat: no-repeat;
+}
+
+.login-block a,
+.login-block a:visited {
+	color: #e2a4c1;
+	border-bottom: 1px dotted #ffffff;
+}
+
+.login-block a:hover {
+	border: 0px none;
+	color: #f05b8c;
+}
+
+#home_special .bullet-list li {
+	border-bottom: 1px solid #955876;
+	background-image: url(images/bullet_list.png);
+}
+
+#home_special .bullet-list li:first-child {
+	border-top: 1px solid #955876;
+}
+
+#home_special, #home_special li {
+  color: #fff;
+}
+#home_special h1, #home_special h2, #home_special h3, #home_special h4, #home_special h5, #home_special h6 {
+  color: #f5d96e;
+}
+
+
+
+
+
+/*** Internal Pages ***/
+
+.left-side h3 {
+	color: #50062C;
+	background-color: #EDE6E9;
+}
+
+.left-side h3.active {
+	background-image: url(images/menu_open.png);
+	color: #50062C;
+}
+.left-side h3.active a, .left-side h3.inactive a {color: #863200;}
+
+.left-side h3.inactive {
+	background-image: url(images/menu_close.png);
+}
+
+
+
+
+
+
+/*** Blog ***/
+.tagcloud a,
+#content .order_confirmed,
+.left-side h3.active a,
+.left-side h3.inactive a,
+.orderby,
+.full-width-content table td span.heading,
+.full-width-content span.summary,
+.list-items span.title,
+.single-item span.title,
+.woocommerce_tabs .panel h2,
+h4.related_products_title,
+.upsells h2,
+#respond #reply-title {
+color: #50062C;
+}
+
+.txtarea-comment,
+.input-text, #searchform input {
+	background-color: #EDE6E9;
+}
+
+#commentform input, 
+#commentform select {
+	background:#EDE6E9;
+}
+
+.form-name span,
+.form-comment span,
+.form-name label,
+.form-comment label {
+	color: #896173;
+}
+
+.new-comment-heading {
+	color: #50062C;
+}
+
+.single-comment .comment-text .name {
+	color: #50062C;
+}
+
+h3.blog-post-title-inner {
+	background: transparent;
+}
+
+.blog-date {
+	background-image: url(images/date_bkg.png);
+}
+
+.panel.entry-content h2 {
+	color: #50062C;
+}
+
+
+
+
+
+
+/*** WooCommerce ***/
+
+#breadcrumb a {
+    color: #C54870;
+}
+
+#blog-entries h3.blog-page-title {
+	background-color: #EDE6E9;
+	color: #50062C;
+}
+
+.widget_layered_nav ul li a {
+    background: url(images/checked.png) no-repeat scroll 0 bottom transparent;
+}
+
+.widget_layered_nav ul li.chosen a, .widget_layered_nav ul li a:hover {
+    background: url(images/checked.png) no-repeat scroll 0 -1px transparent;
+}
+
+.theme-shop.main-content h1, .main-content h3,
+.main-content-left h3 {
+	color: #50062C;
+}
+
+#blog_comments h3,
+h3.archive-title,
+.main-content.theme-shop h1.page-title {
+	background-color: #EDE6E9;
+}
+
+.widget_price_filter .ui-slider .ui-slider-range {
+    background: none repeat scroll 0 0 #CE5D86;
+}
+
+.fancy_form select {
+	background: #EDE6E9 url(../../../images/dropdown_arrow.png) no-repeat right center;
+	color: #50062C;
+}
+
+
+
+
+
+
+
+/*** Tabs & Accordions ***/
+
+.accordion h2.current,
+ul.tabs li a:hover, ul.tabs li a:active, ul.tabs li a.current  {
+	background: url("images/menu_active_bkg.png") repeat-x scroll 0 0 transparent;
+}
+
+.accordion-simple h2.current {
+    background: none repeat scroll 0 0 #966A80;
+    border-bottom: 1px solid #D5C1CA;
+}
+
+ul.tabs-simple li a:hover, ul.tabs-simple li a:active, ul.tabs-simple li a.current {
+    background: none repeat scroll 0 0 #966A80;
+}
+
+
+
+
+
+
+
+/*** Footer ***/
+
+#footer h5 {
+    color: #CE5D86;
+}
+
+.footer-main li a:hover {
+	color: #f05b8c;
+}
